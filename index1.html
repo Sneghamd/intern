@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label> Select a movie:</label>
+      <select id="movie">
+        <option value="220">Godzilla vs Kong (RS.220)</option>
+        <option value="320">Radhe (RS.320)</option>
+        <option value="250">RRR (RS.250)</option>
+        <option value="260">F9 (RS.260)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <script src="script.js"></script>
+    <div class="container">
+		<div class="main-content">
+		
+
+		
+			<p class="text"><span id="total"></span></p>
+		
+
+		<div class="last-content">
+			<button type="button" class="pay-now-btn">
+				Apply Coupons
+			</button>
+			<button type="button" class="pay-now-btn">
+				Pay with Netbanking
+			</button>
+
+			<!-- <button type="button" class="pay-now-btn">
+		Netbanking options
+		</button> -->
+		</div>
+
+		<div class="card-details">
+			<p>Pay using Credit or Debit card</p>
+
+			<div class="card-number">
+				<label> Card Number </label>
+				<input type="text" class="card-number-field"
+					placeholder="###-###-###" />
+			</div>
+			<br />
+			<div class="date-number">
+				<label> Expiry Date </label>
+				<input type="text" class="date-number-field"
+					placeholder="DD-MM-YY" />
+			</div>
+
+			<div class="cvv-number">
+				<label> CVV number </label>
+				<input type="text" class="cvv-number-field"
+					placeholder="xxx" />
+			</div>
+			<div class="nameholder-number">
+				<label> Card Holder name </label>
+				<input type="text" class="card-name-field"
+					placeholder="Enter your Name" />
+			</div>
+			<button type="submit" class="submit-now-btn">
+				Submit
+			</button>
+		</div>
+
+    
+    </div>
+
+  </body>
+</html>
